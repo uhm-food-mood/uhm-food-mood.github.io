@@ -35,5 +35,5 @@ Vendor Homepage:
 Add Listing Page:
 ![Add Listing](images/add-listing.jpg)
 
-Admmin Homepage:
+Admin Homepage:
 ![homepage](images/admin-homepage.jpg)
