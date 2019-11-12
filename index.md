@@ -17,4 +17,5 @@ Ultimately, we hope that the app will provide the following:
 
 ### Mockup Pages
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Landing page:
+![homepage](images/homepage.jpg)
