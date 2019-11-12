@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+## Welcome to UHM Food Mood
 
-You can use the [editor on GitHub](https://github.com/uhm-food-mood/uhm-food-mood.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+UHM Food Mood is the solution to the ever-growing number of meal choices at UH Manoa. Once you log into your UHM Food Mood app, you can learn what menu items are available today and keep track of which of your food favorites are available today.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Goals
 
-### Markdown
+The main goals of UHM Food Mood are to:
+- Provide a consolidated directory of UHM menu items from UHM Food Vendors and Manoa Dining Services
+- Give students a way to easily find their favorite foods on campus
+- Give students food suggestions that they might like on campus
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### What this app will provide
 
-```markdown
-Syntax highlighted code block
+Ultimately, we hope that the app will provide the following:
+- Users will be able to log in and find their favorite foods on campus
+- Vendors will be able to change menu items depending on their weekly/daily menu
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/uhm-food-mood/uhm-food-mood.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
+### Mockup Pages
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
