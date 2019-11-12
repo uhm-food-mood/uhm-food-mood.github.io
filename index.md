@@ -19,3 +19,21 @@ Ultimately, we hope that the app will provide the following:
 
 Landing page:
 ![homepage](images/homepage.jpg)
+
+Food Listing page:
+![Food Listing](images/food-listing.jpg)
+
+User Homepage:
+![homepage](images/user-homepage.jpg)
+
+Add Favorite Page:
+![Add Favorite](images/add-favorite.jpg)
+
+Vendor Homepage:
+![homepage](images/vendor-homepage.jpg)
+
+Add Listing Page:
+![Add Listing](images/add-listing.jpg)
+
+Admmin Homepage:
+![homepage](images/admin-homepage.jpg)
