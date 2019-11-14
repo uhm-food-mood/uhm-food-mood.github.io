@@ -18,22 +18,16 @@ Ultimately, we hope that the app will provide the following:
 ### Mockup Pages
 
 Landing page:
-![homepage](images/homepage.jpg)
-
-Food Listing page:
-![Food Listing](images/food-listing.jpg)
+![landing](images/Landing.png)
 
 User Homepage:
-![homepage](images/user-homepage.jpg)
+![homepage](images/User.png)
 
-Add Favorite Page:
-![Add Favorite](images/add-favorite.jpg)
-
-Vendor Homepage:
-![homepage](images/vendor-homepage.jpg)
-
-Add Listing Page:
-![Add Listing](images/add-listing.jpg)
+Vendor Listing Page:
+![vendor](images/Vendor.png)
 
 Admin Homepage:
-![homepage](images/admin-homepage.jpg)
+![admin](images/Admin_Search.png)
+
+Admin Vendor Listings:
+![listings](images/Admin_Vendor.png)
