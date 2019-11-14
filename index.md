@@ -17,4 +17,23 @@ Ultimately, we hope that the app will provide the following:
 
 ### Mockup Pages
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Landing page:
+![homepage](images/homepage.jpg)
+
+Food Listing page:
+![Food Listing](images/food-listing.jpg)
+
+User Homepage:
+![homepage](images/user-homepage.jpg)
+
+Add Favorite Page:
+![Add Favorite](images/add-favorite.jpg)
+
+Vendor Homepage:
+![homepage](images/vendor-homepage.jpg)
+
+Add Listing Page:
+![Add Listing](images/add-listing.jpg)
+
+Admin Homepage:
+![homepage](images/admin-homepage.jpg)
