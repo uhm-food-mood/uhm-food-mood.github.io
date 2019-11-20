@@ -20,7 +20,7 @@ Ultimately, we hope that the app will provide the following:
 ### Mockup Pages
 
 Landing page:
-![landing](images/Landing.PNG)
+![landing](images/Landing.png)
 
 See the Landing page <a href = "http://uhmfoodmood.meteorapp.com/#/">here</a>.
 
@@ -30,7 +30,7 @@ User Favorites Page:
 See the Favorites page <a href = "http://uhmfoodmood.meteorapp.com/#/list">here</a>
 
 Vendor Listing Page:
-![vendor](images/vendor.PNG)
+![vendor](images/vendor.png)
 
 See the Vendor Listings page <a href = "http://uhmfoodmood.meteorapp.com/#/vendor">here</a>
 
