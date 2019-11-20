@@ -22,15 +22,25 @@ Ultimately, we hope that the app will provide the following:
 Landing page:
 ![landing](images/Landing.PNG)
 
+See the Landing page <a href = "http://uhmfoodmood.meteorapp.com/#/">here</a>.
+
 User Favorites Page:
 ![homepage](images/UserFavorites.PNG)
 
+See the Favorites page <a href = "http://uhmfoodmood.meteorapp.com/#/list">here</a>
+
 Vendor Listing Page:
 ![vendor](images/vendor.PNG)
+
+See the Vendor Listings page <a href = "http://uhmfoodmood.meteorapp.com/#/vendor">here</a>
 
 Vendor/Admin Add Listing Page:
 
 ![add listing](images/AddForm.PNG)
 
+See the Vendor/Admin Add Listing Page <a href = "http://uhmfoodmood.meteorapp.com/#/add/">here</a>
+
 Admin Listings:
 ![listings](images/Admin.PNG)
+
+See the Admin Listings Page <a href = "http://uhmfoodmood.meteorapp.com/#/admin">here</a>
