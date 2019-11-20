@@ -30,7 +30,7 @@ User Favorites Page:
 See the Favorites page <a href = "http://uhmfoodmood.meteorapp.com/#/list">here</a>
 
 Vendor Listing Page:
-![vendor](images/vendor.png)
+![vendor](images/Vendor.png)
 
 See the Vendor Listings page <a href = "http://uhmfoodmood.meteorapp.com/#/vendor">here</a>
 
