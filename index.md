@@ -4,6 +4,8 @@ UHM Food Mood is the solution to the ever-growing number of meal choices at UH M
 
 See our GitHub Organization <a href = "https://github.com/uhm-food-mood">here</a> and our deployed app on Galaxy <a href = "http://uhmfoodmood.meteorapp.com/#/">here</a>. 
 
+In addition, see our M1 Project page <a href = "https://github.com/orgs/uhm-food-mood/projects/1">here</a> and our M2 Project page <a href = "https://github.com/orgs/uhm-food-mood/projects/2">here</a>.
+
 ### Goals
 
 The main goals of UHM Food Mood are to:
