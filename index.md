@@ -2,6 +2,8 @@
 
 UHM Food Mood is the solution to the ever-growing number of meal choices at UH Manoa. Once you log into your UHM Food Mood app, you can learn what menu items are available today and keep track of which of your food favorites are available today.
 
+See our GitHub Organization <a href = "https://github.com/uhm-food-mood">here</a> and our deployed app on Galaxy <a href = "http://uhmfoodmood.meteorapp.com/#/">here</a>. 
+
 ### Goals
 
 The main goals of UHM Food Mood are to:
@@ -18,20 +20,17 @@ Ultimately, we hope that the app will provide the following:
 ### Mockup Pages
 
 Landing page:
-![landing](images/Landing.png)
+![landing](images/Landing.PNG)
 
-User Homepage:
-![homepage](images/User.png)
+User Favorites Page:
+![homepage](images/UserFavorites.PNG)
 
 Vendor Listing Page:
-![vendor](images/Vendor.png)
+![vendor](images/vendor.PNG)
 
-Vendor Add Listing Page:
+Vendor/Admin Add Listing Page:
 
-![add listing](images/Add_Listing.png)
+![add listing](images/AddForm.PNG)
 
-Admin Homepage:
-![admin](images/Admin_Search.png)
-
-Admin Vendor Listings:
-![listings](images/Admin_Vendor.png)
+Admin Listings:
+![listings](images/Admin.PNG)
