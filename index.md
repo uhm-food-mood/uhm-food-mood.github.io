@@ -19,15 +19,15 @@ Ultimately, we hope that the app will provide the following:
 - Users will be able to log in and find their favorite foods on campus
 - Vendors will be able to change menu items depending on their weekly/daily menu
 
-###Overview
+### Overview
 
 UHM Food Mood aims to provide a consolidated catalog of food options at UH Manoa. Although there are existing catalogs of food options on campus, such as <a href = "http://manoa.hawaii.edu/food/">UHM Food Vendors</a> and <a href = "https://uhm.sodexomyway.com/">Manoa Dining Services</a>, there are no catalogs that contain every food option on campus. We aim to make UHM Food Mood the website you look to for food options whenever you're hungry on campus. Eventually, we would like to give users the ability to rate food options so other students will know what's popular on campus.
 
-###User Guide
+### User Guide
 
 Here is a guide through our existing mockup pages on our deployed website.
 
-####Landing page:
+#### Landing page:
 ![landing](images/Landing.png)
 
 The Landing page is the homepage for all users. It has a summary of the purpose of UHM Food Mood and a section that shows what student's "top picks", or most highly rated food options are. Currently, the top picks are just static data, as we have not implemented the review system yet. Click Login at the top right corner to log into your existing account or to create a new account.
@@ -41,14 +41,14 @@ As a regular user, you can favorite your favorite foods from the Food Listing pa
 
 See the Favorites page <a href = "http://uhmfoodmood.meteorapp.com/#/list">here</a>
 
-####Vendor Listing Page:
+#### Vendor Listing Page:
 ![vendor](images/Vendor.png)
 
 As a vendor, you can add new listings and edit your existing listings. Your listings will all be shown in the Vendor Listings page. To add a new listing, you will need to click on the "Add Another" link at the bottom of the page. To edit an existing listing, click on the Edit link at the bottom left corner of the card containing the listing.
 
 See the Vendor Listings page <a href = "http://uhmfoodmood.meteorapp.com/#/vendor">here</a>
 
-####Vendor/Admin Add Listing Page:
+#### Vendor/Admin Add Listing Page:
 
 ![add listing](images/AddForm.PNG)
 
@@ -56,14 +56,14 @@ As an admin/vendor, you can utilize the Add Listing Page to add new food listing
 
 See the Vendor/Admin Add Listing Page <a href = "http://uhmfoodmood.meteorapp.com/#/add/">here</a>
 
-####Admin Listings:
+#### Admin Listings:
 ![listings](images/Admin.PNG)
 
 As an admin, you can edit, remove, and add new food listings. Admins can also view all food listings from all vendors. However, currently the edit and add food listing features have not been implemented. Along with those features, we will also be implementing the ability to search through these listings and view the listings in a more organized manner.
 
 See the Admin Listings Page <a href = "http://uhmfoodmood.meteorapp.com/#/admin">here</a>
 
-###Community Feedback
+### Community Feedback
 
 We have gotten a couple of students to review our prototype so far. Many students believe that a consolidated menu of all food options on campus would be a very helpful resource. 
 
@@ -71,9 +71,9 @@ A few possible improvements mentioned by these students are mainly regarding the
 
 In the future, as we implement more functionality, we intend to carry out further tests with students - especially regarding the user interface and navigation.
 
-###Developer Guide
+### Developer Guide
 
-####Installation
+#### Installation
 The first thing you will need to is install <a href="https://www.meteor.com/install">Meteor</a>. 
 
 Next, download <a href="https://github.com/uhm-food-mood/uhm-food-mood">UHM Food Mood</a>. 
@@ -131,12 +131,12 @@ I20191120-15:57:16.194(-10)?   Adding: Chicken Sandwich (vendor@foo.com)
 => App running at: http://localhost:3000/
    Type Control-C twice to stop.
 ```
-####Viewing UHM Food Mood
+#### Viewing UHM Food Mood
 If the app was installed correctly, you will be able to view it at http://localhost:3000/. You can login using the credentials in <a href="https://github.com/uhm-food-mood/uhm-food-mood/blob/master/config/settings.development.json">settings.development.json</a>.
-###Development History
-####Milestone 1
+### Development History
+#### Milestone 1
 In Milestone 1, we created the Landing page and four mockup pages - the User Favorites page, the Vendor Listings page, the Vendor/Admin Add Listing page, and the Admin Listings page. We added a small amount of functionality to the Admin Listings page, as admins are able to remove listings from the Admin Listings page. We also set up the schema for and MongoDB collection of food options (MenuItems Collection), so all of the information on the cards that appear on our app is pulled from our database.
-####Milestone 2
+#### Milestone 2
 For Milestone 2, we plan to greatly improve the user interface and  functionality of UHM Food Mood. Functionality-wise, we will implement working Add/Edit Listing and Food Listing pages, allow users to search through the food listings, and give users the ability to add favorite food listings. We will also update the UI, from fixing styling/padding errors to redesigning the layout of the cards to be more intuitive.
-###Contact Us
+### Contact Us
 The developers of this website are: Michael Johnson, Brandon Won, and Kelli Tamashiro. If you have any questions about our system, please feel free to contact us at kellikt@hawaii.edu.
