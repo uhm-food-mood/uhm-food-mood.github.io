@@ -34,7 +34,7 @@ The Landing page is the homepage for all users. It has a summary of the purpose 
 
 See the Landing page <a href = "http://uhmfoodmood.meteorapp.com/#/">here</a>.
 
-####User Favorites Page:
+#### User Favorites Page:
 ![homepage](images/UserFavorites.PNG)
 
 As a regular user, you can favorite your favorite foods from the Food Listing page (not yet implemented). These favorited foods will appear in your Favorites page. We have not implemented the ability to add or remove favorites yet, so the data displayed in the john@foo.com account is just test data. In the future, we will also implement the ability to search through your favorites based on keywords (name of food, type of food, vegan, etc). In addition, we will ensure that the foods that are available right now will appear at the top of your favorites.
