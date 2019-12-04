@@ -103,6 +103,8 @@ See the Admin Listings Page <a href = "http://uhmfoodmood.meteorapp.com/#/admin"
 ![review](images/Review.PNG)
 In addition, we have added a mockup of our Review page for M3. This Review page will give users the ability to review a menu item, which will be shown publicly to encourage (or discourage) other users to try the food in question.
 
+See the Add Review Page <a href = "http://uhmfoodmood.meteorapp.com/#/review">here</a>.
+
 ### Community Feedback
 
 We have gotten a couple of students to review our prototype so far. Many students believe that a consolidated menu of all food options on campus would be a very helpful resource. 
@@ -122,13 +124,13 @@ Then, cd into the app/ directory of your local copy of the repo and install thir
 ```
 meteor npm install
 ```
-Once you've installed the libraries, run the application with the following command:
-```
-meteor npm run start
-```
 You will also need to install Moment using:
 ```
 npm install moment
+```
+Once you've installed the libraries, run the application with the following command:
+```
+meteor npm run start
 ```
 The first time you run the app, it will create some default users and data. This is the output:
 ```
@@ -239,5 +241,9 @@ If the app was installed correctly, you will be able to view it at http://localh
 In Milestone 1, we created the Landing page and four mockup pages - the User Favorites page, the Vendor Listings page, the Vendor/Admin Add Listing page, and the Admin Listings page. We added a small amount of functionality to the Admin Listings page, as admins are able to remove listings from the Admin Listings page. We also set up the schema for and MongoDB collection of food options (MenuItems Collection), so all of the information on the cards that appear on our app is pulled from our database.
 #### Milestone 2
 For Milestone 2, we greatly improved the functionality of our website. All users can search through the Food Options page by name, vendor, style of food, or even whether a food is vegan. Regular users are now able to use the "favorite" function so that the foods they favorite will show up in their "Favorites" page. Vendors are able to add new listings and edit/remove existing listings that they own. Admins possess the same abilities of vendors, but are able to use these abilities on all listings, including ones they do not own. We also added an immense amount of default data, 72 menu items - 4 sample food items from 18 vendors. In addition, we set up the Review collection to prepare for the addition of Reviews in Milestone 3.
+#### Milestone 3
+For Milestone 3, we intend to improve upon the functionality we provided in Milestone 2. We will add functionality to the Reviews collection, so that users will be able to add reviews to their menu items. We will also add a page (or sort the existing search page) to see all a menu items that are available right now. Adding to that, we will improve upon the availability function, as currently it shows that an item is available regardless of day, as long as it is within the hours it is available. We will also make significant updates to the UI, changing the color scheme (testers noted that the background was at times, overwhelming) and improving the interface of specific pages, like the Food Listings and Sign in/Register pages. More issues are expected to come up as we go through with user testing next week.
+
+
 ### Contact Us
 The developers of this website are: Michael Johnson, Brandon Won, and Kelli Tamashiro. If you have any questions about our system, please feel free to contact us at kellikt@hawaii.edu.
