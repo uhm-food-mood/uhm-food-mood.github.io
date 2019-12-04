@@ -28,7 +28,7 @@ UHM Food Mood aims to provide a consolidated catalog of food options at UH Manoa
 Here is a guide through our existing mockup pages on our deployed website.
 
 #### Landing page:
-![landing](images/Landing.PNG)
+![landing](images/Landing.png)
 
 The Landing page is the homepage for all users. It has a summary of the purpose of UHM Food Mood and a section that shows what student's "top picks", or most highly rated food options are. Currently, the top picks are just static data, as we have not implemented the review system yet. Click Login at the top right corner to log into your existing account or to create a new account.
 
