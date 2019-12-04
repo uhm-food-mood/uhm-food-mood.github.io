@@ -67,7 +67,7 @@ As a regular user, you can favorite your favorite foods from the Food Options. T
 See the Favorites page <a href = "http://uhmfoodmood.meteorapp.com/#/list">here</a>
 
 #### Vendor Listing Page:
-![vendor](images/VendorListings.png)
+![vendor](images/VendorListings.PNG)
 
 As a vendor, you can add new listings and edit or delete your existing listings. Your listings will all be shown in the Vendor Listings page. To add a new listing, you will need to click on the "Add Another" link at the bottom of the page. To edit an existing listing, click on the Edit link at the bottom left corner of the card containing the listing. To delete a listing, click "Remove" at the bottom of the card. You also have the same search functionality for your own listings, using the search bar at the top left corner.
 
