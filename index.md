@@ -4,7 +4,7 @@ UHM Food Mood is the solution to the ever-growing number of meal choices at UH M
 
 See our GitHub Organization <a href = "https://github.com/uhm-food-mood">here</a> and our deployed app on Galaxy <a href = "http://uhmfoodmood.meteorapp.com/#/">here</a>. 
 
-In addition, see our M1 Project page <a href = "https://github.com/orgs/uhm-food-mood/projects/1">here</a> and our M2 Project page <a href = "https://github.com/orgs/uhm-food-mood/projects/2">here</a>.
+In addition, see our M1 Project page <a href = "https://github.com/orgs/uhm-food-mood/projects/1">here</a>, our M2 Project page <a href = "https://github.com/orgs/uhm-food-mood/projects/2">here</a>, and our M3 Project page <a href = "https://github.com/orgs/uhm-food-mood/projects/3">here</a>.
 
 ### Goals
 
@@ -28,40 +28,80 @@ UHM Food Mood aims to provide a consolidated catalog of food options at UH Manoa
 Here is a guide through our existing mockup pages on our deployed website.
 
 #### Landing page:
-![landing](images/Landing.png)
+![landing](images/Landing.PNG)
 
 The Landing page is the homepage for all users. It has a summary of the purpose of UHM Food Mood and a section that shows what student's "top picks", or most highly rated food options are. Currently, the top picks are just static data, as we have not implemented the review system yet. Click Login at the top right corner to log into your existing account or to create a new account.
 
 See the Landing page <a href = "http://uhmfoodmood.meteorapp.com/#/">here</a>.
 
-#### User Favorites Page:
-![homepage](images/UserFavorites.PNG)
+#### Food Options Page:
+![options](images/FoodOptions.PNG)
+Without logging in, you can still view all the food options available. Each card shown displays the name, image, vendor, availability, style, and price of the food. There is also an option to "favorite" the food by clicking on the heart button, but you must be logged in for this function to work.
 
-As a regular user, you can favorite your favorite foods from the Food Listing page (not yet implemented). These favorited foods will appear in your Favorites page. We have not implemented the ability to add or remove favorites yet, so the data displayed in the john@foo.com account is just test data. In the future, we will also implement the ability to search through your favorites based on keywords (name of food, type of food, vegan, etc). In addition, we will ensure that the foods that are available right now will appear at the top of your favorites.
+You can also use the search bar to search through the food options. Search by the name of the food:
+![search!](images/NameSearch.PNG)
+Or by the style of the food:
+![search!](images/EthnicitySearch.PNG)
+Or by vendor:
+![search!](images/VendorSearch.PNG)
+Or if it's vegan:
+![search](images/VeganSearch.PNG)
+Or even a mixture of both:
+![search](images/NameStyleSearch.PNG)
+
+See the Food Options Page <a href="http://uhmfoodmood.meteorapp.com/#/allListings">here</a>.
+
+#### Food Listings Page
+
+![listings](images/FoodListings.PNG)
+
+The Food Listings page showcases all of our vendors. Like the Food Options page, you do not need to be logged in to view this page.
+
+See the Food Listings page <a href="http://uhmfoodmood.meteorapp.com/#/listings">here</a>.
+
+#### User Favorites Page:
+![homepage](images/Favorites.PNG)
+
+As a regular user, you can favorite your favorite foods from the Food Options. These favorited foods will appear in your Favorites page. If you want to delete any of your favorites, you just need to click on the trash can button at the bottom left of the card. Like the Food Options page, you have the same search functionality using the search bar at the top left. In the future, we will ensure that the foods that are available right now will appear at the top of your favorites.
 
 See the Favorites page <a href = "http://uhmfoodmood.meteorapp.com/#/list">here</a>
 
 #### Vendor Listing Page:
-![vendor](images/Vendor.png)
+![vendor](images/VendorListings.png)
 
-As a vendor, you can add new listings and edit your existing listings. Your listings will all be shown in the Vendor Listings page. To add a new listing, you will need to click on the "Add Another" link at the bottom of the page. To edit an existing listing, click on the Edit link at the bottom left corner of the card containing the listing.
+As a vendor, you can add new listings and edit or delete your existing listings. Your listings will all be shown in the Vendor Listings page. To add a new listing, you will need to click on the "Add Another" link at the bottom of the page. To edit an existing listing, click on the Edit link at the bottom left corner of the card containing the listing. To delete a listing, click "Remove" at the bottom of the card. You also have the same search functionality for your own listings, using the search bar at the top left corner.
 
 See the Vendor Listings page <a href = "http://uhmfoodmood.meteorapp.com/#/vendor">here</a>
 
 #### Vendor/Admin Add Listing Page:
 
-![add listing](images/AddForm.PNG)
+![add listing](images/AddPage.PNG)
 
-As an admin/vendor, you can utilize the Add Listing Page to add new food listings. You will need to enter the name of the food, the name of the vendor, the price, the date when the food will be available from, and the times when students can purchase the food. Click the submit button and it will create a new listing with the provided information. Currently, the form itself is not working due to a form error, but we plan to fix this in the next implementation.
+As an admin/vendor, you can utilize the Add Listing Page to add new food listings. You will need to enter the name of the food, the URL to the image of the food, the name of the vendor, the price, whether the food is vegan, the style of the food, the date when the food will be available from, and the times when students can purchase the food. Click the submit button and it will create a new listing with the provided information. 
+![added](images/AddSuccess.PNG)
 
 See the Vendor/Admin Add Listing Page <a href = "http://uhmfoodmood.meteorapp.com/#/add/">here</a>
+
+#### Vendor/Admin Edit Listing Page:
+
+![edit](images/EditPage.PNG)
+As an admin/vendor, you are also given the ability to use the Edit Listing Page to edit food listings. All the previous information about the food listing is already filled in, all you need to do is edit the parts that you would like to change. Once you have finished making your changes, click submit.
+![changed](images/EditSuccess.PNG)
+
+If you have received this notification, you have successfully edited the menu item.
+
+See an example of a Vendor/Admin Edit Listing Page (each menu item has a unique URL for their edit page) <a href="http://uhmfoodmood.meteorapp.com/#/edit/4u9kNpbJJNCn4PBKE">here</a>.
 
 #### Admin Listings:
 ![listings](images/Admin.PNG)
 
-As an admin, you can edit, remove, and add new food listings. Admins can also view all food listings from all vendors. However, currently the edit and add food listing features have not been implemented. Along with those features, we will also be implementing the ability to search through these listings and view the listings in a more organized manner.
+As an admin, you can edit, remove, and add new food listings. Admins can also view all food listings from all vendors. In addition, you can search through all these listings using the search bar at the top left corner.
 
 See the Admin Listings Page <a href = "http://uhmfoodmood.meteorapp.com/#/admin">here</a>
+
+#### Review Page
+![review](images/Review.PNG)
+In addition, we have added a mockup of our Review page for M3. This Review page will give users the ability to review a menu item, which will be shown publicly to encourage (or discourage) other users to try the food in question.
 
 ### Community Feedback
 
@@ -86,6 +126,10 @@ Once you've installed the libraries, run the application with the following comm
 ```
 meteor npm run start
 ```
+You will also need to install Moment using:
+```
+npm install moment
+```
 The first time you run the app, it will create some default users and data. This is the output:
 ```
 C:\Users\Kelli\Documents\GitHub\uhm-food-mood\app>meteor npm run start
@@ -97,35 +141,92 @@ C:\Users\Kelli\Documents\GitHub\uhm-food-mood\app>meteor npm run start
 
 => Started proxy.
 => Started MongoDB.
-W20191120-15:57:14.868(-10)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
-W20191120-15:57:14.923(-10)? (STDERR) While this implementation will work correctly, it is known to be
-W20191120-15:57:14.936(-10)? (STDERR) approximately three times slower than the native implementation.
-W20191120-15:57:14.941(-10)? (STDERR) In order to use the native implementation instead, run
-W20191120-15:57:14.957(-10)? (STDERR)
-W20191120-15:57:14.960(-10)? (STDERR)   meteor npm install --save bcrypt
-W20191120-15:57:14.975(-10)? (STDERR)
-W20191120-15:57:14.980(-10)? (STDERR) in the root directory of your application.
-I20191120-15:57:15.188(-10)? Creating the default user(s)
-I20191120-15:57:15.191(-10)?   Creating user admin@foo.com.
-I20191120-15:57:15.571(-10)?   Creating user john@foo.com.
-I20191120-15:57:15.779(-10)?   Creating user vendor@foo.com.
-I20191120-15:57:15.997(-10)? Creating default data.
-I20191120-15:57:16.001(-10)?   Adding: Basket (john@foo.com)
-I20191120-15:57:16.014(-10)?   Adding: Bicycle (john@foo.com)
-I20191120-15:57:16.017(-10)?   Adding: Banana (admin@foo.com)
-I20191120-15:57:16.033(-10)?   Adding: Boogie Board (admin@foo.com)
-I20191120-15:57:16.052(-10)? Creating default data.
-I20191120-15:57:16.069(-10)?   Adding: Nachos (vendor@foo.com)
-I20191120-15:57:16.078(-10)?   Adding: Enchiladas (vendor@foo.com)
-I20191120-15:57:16.094(-10)?   Adding: Sushi (vendor@foo.com)
-I20191120-15:57:16.099(-10)?   Adding: Chicken Sandwich (vendor@foo.com)
-I20191120-15:57:16.115(-10)?   Adding: Nachos (vendor@foo.com)
-I20191120-15:57:16.135(-10)?   Adding: Enchiladas (vendor@foo.com)
-I20191120-15:57:16.152(-10)?   Adding: Sushi (vendor@foo.com)
-I20191120-15:57:16.169(-10)?   Adding: Nachos (john@foo.com)
-I20191120-15:57:16.186(-10)?   Adding: Enchiladas (john@foo.com)
-I20191120-15:57:16.193(-10)?   Adding: Sushi (john@foo.com)
-I20191120-15:57:16.194(-10)?   Adding: Chicken Sandwich (vendor@foo.com)
+W20191203-20:28:53.339(-10)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
+W20191203-20:28:53.413(-10)? (STDERR) While this implementation will work correctly, it is known to be
+W20191203-20:28:53.414(-10)? (STDERR) approximately three times slower than the native implementation.
+W20191203-20:28:53.428(-10)? (STDERR) In order to use the native implementation instead, run
+W20191203-20:28:53.432(-10)? (STDERR)
+W20191203-20:28:53.445(-10)? (STDERR)   meteor npm install --save bcrypt
+W20191203-20:28:53.449(-10)? (STDERR)
+W20191203-20:28:53.462(-10)? (STDERR) in the root directory of your application.
+I20191203-20:28:53.978(-10)? Creating the default user(s)
+I20191203-20:28:53.983(-10)?   Creating user admin@foo.com.
+I20191203-20:28:54.310(-10)?   Creating user john@foo.com.
+I20191203-20:28:54.636(-10)?   Creating user vendor@foo.com.
+I20191203-20:28:55.170(-10)? Creating default data.
+I20191203-20:28:55.180(-10)?   Adding: Eggplant Parmesan (vendor@foo.com)
+I20191203-20:28:55.203(-10)?   Adding: Moussakka (vendor@foo.com)
+I20191203-20:28:55.212(-10)?   Adding: Thai Green Vegetable Curry (vendor@foo.com)
+I20191203-20:28:55.229(-10)?   Adding: Thai Red Vegetable Curry (vendor@foo.com)
+I20191203-20:28:55.234(-10)?   Adding: Lamb/Beef/Chicken Wrap (vendor@foo.com)
+I20191203-20:28:55.254(-10)?   Adding: Lamb/Beef/Chicken Plate (vendor@foo.com)
+I20191203-20:28:55.260(-10)?   Adding: Lamb/Beef/Chicken Salad (vendor@foo.com)
+I20191203-20:28:55.281(-10)?   Adding: Garlic Yogurt Sauce (vendor@foo.com)
+I20191203-20:28:55.286(-10)?   Adding: Coffee (Hot/Cold/Blended) (vendor@foo.com)
+I20191203-20:28:55.290(-10)?   Adding: Donuts (vendor@foo.com)
+I20191203-20:28:55.341(-10)?   Adding: Lunch Sandwiches (vendor@foo.com)
+I20191203-20:28:55.342(-10)?   Adding: Breakfast (vendor@foo.com)
+I20191203-20:28:55.344(-10)?   Adding: Khichdi (vendor@foo.com)
+I20191203-20:28:55.345(-10)?   Adding: Strawberry Halava (vendor@foo.com)
+I20191203-20:28:55.346(-10)?   Adding: Peanut Butter Halava (vendor@foo.com)
+I20191203-20:28:55.348(-10)?   Adding: Pineapple Coconut Halava (vendor@foo.com)
+I20191203-20:28:55.349(-10)?   Adding: Tuna Melt Panini (vendor@foo.com)
+I20191203-20:28:55.380(-10)?   Adding: Grilled Cheese Panini (vendor@foo.com)
+I20191203-20:28:55.384(-10)?   Adding: Chicken Chipotle Panini (vendor@foo.com)
+I20191203-20:28:55.406(-10)?   Adding: Turkey Avocado Panini (vendor@foo.com)
+I20191203-20:28:55.411(-10)?   Adding: Corn Tacos (vendor@foo.com)
+I20191203-20:28:55.432(-10)?   Adding: Burritos (vendor@foo.com)
+I20191203-20:28:55.464(-10)?   Adding: Quesadillas (vendor@foo.com)
+I20191203-20:28:55.468(-10)?   Adding: Tamales (vendor@foo.com)
+I20191203-20:28:55.488(-10)?   Adding: Shave Ice (vendor@foo.com)
+I20191203-20:28:55.493(-10)?   Adding: Sorbet Bowls (vendor@foo.com)
+I20191203-20:28:55.517(-10)?   Adding: Poke Nachos (vendor@foo.com)
+I20191203-20:28:55.517(-10)?   Adding: Acai Bowls (vendor@foo.com)
+I20191203-20:28:55.539(-10)?   Adding: Beefy Miso Ramen (vendor@foo.com)
+I20191203-20:28:55.544(-10)?   Adding: Beefy Spicy Ramen (vendor@foo.com)
+I20191203-20:28:55.565(-10)?   Adding: Beefy Wild Ramen (vendor@foo.com)
+I20191203-20:28:55.568(-10)?   Adding: Pork Gyoza (vendor@foo.com)
+I20191203-20:28:55.589(-10)?   Adding: Chicken Katsu (vendor@foo.com)
+I20191203-20:28:55.594(-10)?   Adding: Loco Moco (vendor@foo.com)
+I20191203-20:28:55.613(-10)?   Adding: BBQ Chicken (vendor@foo.com)
+I20191203-20:28:55.618(-10)?   Adding: Grilled Garlic Ahi (vendor@foo.com)
+I20191203-20:28:55.640(-10)?   Adding: Egg Masala (vendor@foo.com)
+I20191203-20:28:55.644(-10)?   Adding: Vegetable Masala (vendor@foo.com)
+I20191203-20:28:55.664(-10)?   Adding: Tofu Sambal (vendor@foo.com)
+I20191203-20:28:55.811(-10)?   Adding: Vegetable Sambal (vendor@foo.com)
+I20191203-20:28:55.816(-10)?   Adding: Cheese Louise (vendor@foo.com)
+I20191203-20:28:55.837(-10)?   Adding: Pesto- Pesto (vendor@foo.com)
+I20191203-20:28:55.842(-10)?   Adding: Nutella (vendor@foo.com)
+I20191203-20:28:55.864(-10)?   Adding: Shoyu Ahi Poke Bowl (vendor@foo.com)
+I20191203-20:28:55.868(-10)?   Adding: Shoyu Tako Poke Bowl (vendor@foo.com)
+I20191203-20:28:55.890(-10)?   Adding: Miso Ahi Poke Bowl (vendor@foo.com)
+I20191203-20:28:55.896(-10)?   Adding: Miso Tako Poke Bowl (vendor@foo.com)
+I20191203-20:28:55.917(-10)?   Adding: Orange Chicken (vendor@foo.com)
+I20191203-20:28:55.941(-10)?   Adding: Beef Broccoli (vendor@foo.com)
+I20191203-20:28:55.946(-10)?   Adding: Mushroom Chicken (vendor@foo.com)
+I20191203-20:28:55.967(-10)?   Adding: Honey Walnut Shrimp (vendor@foo.com)
+I20191203-20:28:55.991(-10)?   Adding: Black/Green Iced Tea (vendor@foo.com)
+I20191203-20:28:55.995(-10)?   Adding: Hot Cocoa (vendor@foo.com)
+I20191203-20:28:56.017(-10)?   Adding: Cold Cereal w/Fruit (vendor@foo.com)
+I20191203-20:28:56.052(-10)?   Adding: Ice Cream Sundae (vendor@foo.com)
+I20191203-20:28:56.057(-10)?   Adding: Fish Jun Plate (vendor@foo.com)
+I20191203-20:28:56.091(-10)?   Adding: Kalbi Bibimbap (vendor@foo.com)
+I20191203-20:28:56.116(-10)?   Adding: Steak Plate (vendor@foo.com)
+I20191203-20:28:56.141(-10)?   Adding: Homemade Kimchi (vendor@foo.com)
+I20191203-20:28:56.145(-10)?   Adding: Cappuccino (vendor@foo.com)
+I20191203-20:28:56.145(-10)?   Adding: Macchiato (vendor@foo.com)
+I20191203-20:28:56.176(-10)?   Adding: Latte (vendor@foo.com)
+I20191203-20:28:56.179(-10)?   Adding: Mocha (vendor@foo.com)
+I20191203-20:28:56.201(-10)?   Adding: Pho (vendor@foo.com)
+I20191203-20:28:56.226(-10)?   Adding: Pad Thai (vendor@foo.com)
+I20191203-20:28:56.230(-10)?   Adding: Banh Mi Sandwiches (vendor@foo.com)
+I20191203-20:28:56.251(-10)?   Adding: Spring Rolls (vendor@foo.com)
+I20191203-20:28:56.274(-10)?   Adding: Smoothies (vendor@foo.com)
+I20191203-20:28:56.278(-10)?   Adding: Oatmeal Bowl (vendor@foo.com)
+I20191203-20:28:56.278(-10)?   Adding: Apple Cinnamon Pretzel (vendor@foo.com)
+I20191203-20:28:56.304(-10)?   Adding: Banana Toast (vendor@foo.com)
+I20191203-20:28:56.324(-10)? Creating default reviews.
+I20191203-20:28:56.328(-10)?   Adding Review: Nachos (john@foo.com)
 => Started your app.
 
 => App running at: http://localhost:3000/
