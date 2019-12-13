@@ -28,9 +28,10 @@ UHM Food Mood aims to provide a consolidated catalog of food options at UH Manoa
 Here is a guide through our existing mockup pages on our deployed website.
 
 #### Landing page:
-![landing](images/Landing.png)
+![landing](images/Landing-Description.PNG)
+![landing](images/Landing-TopChoices.PNG)
 
-The Landing page is the homepage for all users. It has a summary of the purpose of UHM Food Mood and a section that shows what student's "top picks", or most highly rated food options are. Currently, the top picks are just static data, as we have not implemented the review system yet. Click Login at the top right corner to log into your existing account or to create a new account.
+The Landing page is the homepage for all users. It has a summary of the purpose of UHM Food Mood and a section that shows what student's "top picks", or most highly rated food options are. This is based on the average of the ratings (score of 1 - 5, 5 being the highest) in the reviews of each food option. Click Login at the top right corner to log into your existing account or to create a new account.
 
 See the Landing page <a href = "http://uhmfoodmood.meteorapp.com/#/">here</a>.
 
@@ -39,71 +40,138 @@ See the Landing page <a href = "http://uhmfoodmood.meteorapp.com/#/">here</a>.
 Without logging in, you can still view all the food options available. Each card shown displays the name, image, vendor, availability, style, and price of the food. There is also an option to "favorite" the food by clicking on the heart button, but you must be logged in for this function to work.
 
 You can also use the search bar to search through the food options. Search by the name of the food:
-![search!](images/NameSearch.PNG)
+![search!](images/FoodOptions-Name.PNG)
 Or by the style of the food:
-![search!](images/EthnicitySearch.PNG)
+![search!](images/FoodOptions-Style.PNG)
 Or by vendor:
-![search!](images/VendorSearch.PNG)
+![search!](images/FoodOptions-Vendor.PNG)
 Or if it's vegan:
-![search](images/VeganSearch.PNG)
+![search](images/FoodOptions-Vegan.PNG)
 Or even a mixture of both:
-![search](images/NameStyleSearch.PNG)
+![search](images/FoodOptions-Vendor-Name.PNG)
+
+You can also see which food is available right now by clicking the "Food Available Now" button. When it is active, the button will turn green. If you want to show all food options available, just click the "Food Available Now" button again.
+
+![available](images/FoodOptions-FoodAvailableNow.PNG)
+
+You can also sort the food options by the highest rated food options by clicking the "Sort by Rating" button. Like the "Food Available Now" button, when this button is active, it will turn green. If you want it to revert back to the unsorted order, just click the "Sort By Rating" button again.
+
+![sorted](images/FoodOptions-Rating.PNG)
+
+In addition, you can have both buttons active at once, showing you the food options available right now, sorted by highest rating.
+
+![sortedavailable](images/FoodOptions-FoodAvailableNowRated.PNG)
+
+As a regular user (logged in user), you can favorite items from this page by clicking the heart button on the food option card. Once this button is clicked, the heart button will turn red, indicating that you have favorited this food option. You will also receive an alert confirming that you have added this item to your favorites.
+
+![favorites](images/FoodOptionsUser-AddFavorite.PNG)
 
 See the Food Options Page <a href="http://uhmfoodmood.meteorapp.com/#/allListings">here</a>.
 
-#### Food Listings Page
+#### Reviews Page
 
-![listings](images/FoodListings.PNG)
+![reviews](images/FoodOptions-Review.PNG)
 
-The Food Listings page showcases all of our vendors. Like the Food Options page, you do not need to be logged in to view this page.
+In addition, each food option has a review page. You can view these reviews by clicking on the "See Reviews" link at the bottom of the food option card. Each review shows the username of the user who created the review, their rating (1 - 5, 5 being the highest) in stars, and their description for the review.
+
+As a regular user (logged in), you can edit or remove your review if you have created a review for this food option.
+
+![yourreview](images/FoodOptionsUser-Review.PNG) 
+
+See the Reviews Page of a food option (Eggplant Parmesan) here: <a href="http://uhmfoodmood.meteorapp.com/#/review/82bE4Z73wqSPRt5Td">here</a>.
+
+#### Vendors Page
+
+![listings](images/Vendors-Listings.PNG)
+
+The Vendors page showcases all of our vendors, it displays their logo, name, and a short description of what they are. Like the Food Options page, you do not need to be logged in to view this page.
+
+You can click the "See their food options" button to view all their food options.
+
+![VendorOptions](images/Vendors-FoodOptions.PNG)
+
+It has the same search and sorting functionality as the Food Options page, so you can search by name, vendor, style, whether it's vegan. You can also use the "Food Available Now" and "Sort by rating" buttons to view food that's available now or to sort the food options by rating.
 
 See the Food Listings page <a href="http://uhmfoodmood.meteorapp.com/#/listings">here</a>.
 
 #### User Favorites Page:
 ![homepage](images/Favorites.PNG)
 
-As a regular user, you can favorite your favorite foods from the Food Options. These favorited foods will appear in your Favorites page. If you want to delete any of your favorites, you just need to click on the trash can button at the bottom left of the card. Like the Food Options page, you have the same search functionality using the search bar at the top left. In the future, we will ensure that the foods that are available right now will appear at the top of your favorites.
+As a regular user, you can favorite your favorite foods from the Food Options. These favorited foods will appear in your Favorites page. If you want to delete any of your favorites, you just need to click on the "Remove" button at the bottom left of the card. Like the Food Options page, you have the same search functionality using the search bar at the top left.
 
-See the Favorites page <a href = "http://uhmfoodmood.meteorapp.com/#/list">here</a>
+Before removing a favorite, a user will be sent an alert to confirm that they want to remove the favorite.
+
+![remove](images/Favorites-RemoveWarning.PNG)
+
+Once confirmed, they will receive an alert that the removal was successful.
+
+![removed](images/Favorites-Remove.PNG)
+
+See the Favorites page (must be logged in) <a href = "http://uhmfoodmood.meteorapp.com/#/list">here</a>
+
+####Your Reviews Page
+
+![yourreviews](images/YourReviews.PNG)
+
+Regular (logged in) users can also manage their reviews by going to the Your Reviews page. It lists the name of the food they reviewed, the vendor the food is from, the rating they gave the food, and the description associated with the review. They also have the ability to edit or delete reviews.
+
+If they delete a review, they will first be asked to confirm the deletion:
+![deletereview](images/YourReviews-DeleteReview.PNG)
+Once confirmed, they will receive an alert letting them know their review has been deleted:
+![deletedreview](images/YourReviews-DeleteReviewConfirm.PNG)
+
+See Your Reviews page <a href="http://uhmfoodmood.meteorapp.com/#/reviews">here</a>.
 
 #### Vendor Listing Page:
 ![vendor](images/VendorListings.PNG)
 
-As a vendor, you can add new listings and edit or delete your existing listings. Your listings will all be shown in the Vendor Listings page. To add a new listing, you will need to click on the "Add Another" link at the bottom of the page. To edit an existing listing, click on the Edit link at the bottom left corner of the card containing the listing. To delete a listing, click "Remove" at the bottom of the card. You also have the same search functionality for your own listings, using the search bar at the top left corner.
+As a vendor, you can add new listings and edit or delete your existing listings. Your listings will all be shown in the Vendor Listings page. To add a new listing, you will need to click on the "Add Menu Item" button at the top right of the page. To edit an existing listing, click on the Edit link in the row containing the listing. To delete a listing, click the trash can button in the row containing the listing. You also have the same search functionality for your own listings, using the search bar at the top left corner.
 
 See the Vendor Listings page <a href = "http://uhmfoodmood.meteorapp.com/#/vendor">here</a>
 
 #### Vendor/Admin Add Listing Page:
 
-![add listing](images/AddPage.PNG)
+![add listing](images/AddVendorListing.PNG)
 
 As an admin/vendor, you can utilize the Add Listing Page to add new food listings. You will need to enter the name of the food, the URL to the image of the food, the name of the vendor, the price, whether the food is vegan, the style of the food, the date when the food will be available from, and the times when students can purchase the food. Click the submit button and it will create a new listing with the provided information. 
-![added](images/AddSuccess.PNG)
+![added](images/AddVendorListingSuccess.PNG)
 
 See the Vendor/Admin Add Listing Page <a href = "http://uhmfoodmood.meteorapp.com/#/add/">here</a>
 
 #### Vendor/Admin Edit Listing Page:
 
-![edit](images/EditPage.PNG)
+![edit](images/EditVendorListing.PNG)
 As an admin/vendor, you are also given the ability to use the Edit Listing Page to edit food listings. All the previous information about the food listing is already filled in, all you need to do is edit the parts that you would like to change. Once you have finished making your changes, click submit.
-![changed](images/EditSuccess.PNG)
+![changed](images/EditVendorListingSuccess.PNG)
 
 If you have received this notification, you have successfully edited the menu item.
 
 See an example of a Vendor/Admin Edit Listing Page (each menu item has a unique URL for their edit page) <a href="http://uhmfoodmood.meteorapp.com/#/edit/4u9kNpbJJNCn4PBKE">here</a>.
 
-#### Admin Listings:
-![listings](images/Admin.PNG)
+#### Admin - Manage Listings Page
+![listings](images/AdminListings.PNG)
 
 As an admin, you can edit, remove, and add new food listings. Admins can also view all food listings from all vendors. In addition, you can search through all these listings using the search bar at the top left corner.
 
-See the Admin Listings Page <a href = "http://uhmfoodmood.meteorapp.com/#/admin">here</a>
+See the Manage Listings Page <a href = "http://uhmfoodmood.meteorapp.com/#/admin">here</a>
 
-#### Review Page
-![review](images/Review.PNG)
-In addition, we have added a mockup of our Review page for M3. This Review page will give users the ability to review a menu item, which will be shown publicly to encourage (or discourage) other users to try the food in question.
+Note that to get to this page as an admin, you will need to click on Manage > Manage Listings in the menu.
 
-See the Add Review Page <a href = "http://uhmfoodmood.meteorapp.com/#/review">here</a>.
+#### Admin - Manage Favorites Page
+
+![favorites](images/AdminFavorites.PNG)
+
+As an Admin, you can also view and delete favorites of all users. The Manage Favorites page displays the owner, food name, and vendor of the favorite. You can also search through all the favorites by using the search bar at the top left corner (owner, food name, or vendor work). In addition, admins can delete a favorite from a user by clicking on the red trash can icon in the Remove column.
+
+See the Manage Favorites Page <a href = "http://uhmfoodmood.meteorapp.com/#/listFavorites">here</a>.
+
+#### Admin - Manage Users Page
+
+![users](images/AdminUsers.PNG)
+
+Additionally, Admins can also view and manage all users in the Manage Users page. Admins can search through users using the search bar at the top left corner (search by name). Admins can also add users as admins or vendors by clicking on the red "Add as Admin" button or the red "Add as Vendor" button. They can also remove users by clicking on the red trash can icon in the Remove column.
+
+See the Manage Users Page <a href = "http://uhmfoodmood.meteorapp.com/#/users">here</a>.
 
 ### Community Feedback
 
