@@ -175,11 +175,56 @@ See the Manage Users Page <a href = "http://uhmfoodmood.meteorapp.com/#/users">h
 
 ### Community Feedback
 
-We have gotten a couple of students to review our prototype so far. Many students believe that a consolidated menu of all food options on campus would be a very helpful resource. 
+We have gotten several students to try out our website. For each of these students, we had them try to carry out several tasks on our website, such as:
 
-A few possible improvements mentioned by these students are mainly regarding the User Interface, such as using lighter typefaces and varying the font size.
+- Search for Donuts in the Food Options page.
+- Look at the reviews of Lunch Sandwiches
+- Register for an account.
+- Add food to your favorites.
+- Add a food item that is Chinese to your favorites
+- Add a food item from Jamba to your favorites
+- Add Donuts to your favorites
+- Add a review to one of your favorites.
+- Look at food that’s available right now.
+- Look at food that’s available right now in your favorites.
+- Delete a favorite.
+- Delete a review.
 
-In the future, as we implement more functionality, we intend to carry out further tests with students - especially regarding the user interface and navigation.
+Vendor Testing
+
+- Sign in as jamba@foo.com
+- Add a menu item to your listings
+- Edit the menu item in your listings
+- Remove the menu item from your listings
+
+Admin testing
+
+- Sign in as admin@foo.com
+- Edit a review from another user.
+- Delete a review from another user.
+- Change yourself to a vendor
+- Change yourself to an admin
+- Delete your user
+
+From here, we observed how our testers interacted with our website while attempting to carry out these tasks. 
+
+#### Raymond
+ ![raymond](images/raymond.jpg)
+
+Raymond is a student at UH Manoa who helped test out our website. When testing our website with Raymond, we found that it was hard to tell when the "Food available now" button was active. As such, occasionally he would search without knowing it was only showing the food currently available. We addressed this issue by making the "Food available now" button green when it is active.
+
+#### Desmond
+![desmond](images/desmond.jpg)
+
+Desmond is another student at UH Manoa who helped test out our website. Desmond offered some advice on improving the User Interface, such as increasing padding on certain areas (Login page, create space above the header) as well as hiding buttons that certain users could not use (ex. hiding the Add Review button for users not logged in). From Desmond's suggestions, we made numerous UI updates.
+
+#### Jackie, Monica, Jacob
+![jackie](images/jackie.jpg)
+![monica](images/monica.jpg)
+![jacob](images/jacob.jpg)
+
+We combined the summary of our findings for Jackie, Monica, and Jacob, as we found that the issues they ran into were pretty similar. All three of them did not know what they could search in the searchbar (vegan, name of food, style of food, vendor) to find food options. In addition, they wanted to see some kind of connection between the ratings in the reviews of the food option and the food option listed on the Food Options page. From this feedback, we decided to create instructions for the search bars and had the average of the ratings in the reviews of the food option displayed on the food option.
+
 
 ### Developer Guide
 
@@ -211,92 +256,146 @@ C:\Users\Kelli\Documents\GitHub\uhm-food-mood\app>meteor npm run start
 
 => Started proxy.
 => Started MongoDB.
-W20191203-20:28:53.339(-10)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
-W20191203-20:28:53.413(-10)? (STDERR) While this implementation will work correctly, it is known to be
-W20191203-20:28:53.414(-10)? (STDERR) approximately three times slower than the native implementation.
-W20191203-20:28:53.428(-10)? (STDERR) In order to use the native implementation instead, run
-W20191203-20:28:53.432(-10)? (STDERR)
-W20191203-20:28:53.445(-10)? (STDERR)   meteor npm install --save bcrypt
-W20191203-20:28:53.449(-10)? (STDERR)
-W20191203-20:28:53.462(-10)? (STDERR) in the root directory of your application.
-I20191203-20:28:53.978(-10)? Creating the default user(s)
-I20191203-20:28:53.983(-10)?   Creating user admin@foo.com.
-I20191203-20:28:54.310(-10)?   Creating user john@foo.com.
-I20191203-20:28:54.636(-10)?   Creating user vendor@foo.com.
-I20191203-20:28:55.170(-10)? Creating default data.
-I20191203-20:28:55.180(-10)?   Adding: Eggplant Parmesan (vendor@foo.com)
-I20191203-20:28:55.203(-10)?   Adding: Moussakka (vendor@foo.com)
-I20191203-20:28:55.212(-10)?   Adding: Thai Green Vegetable Curry (vendor@foo.com)
-I20191203-20:28:55.229(-10)?   Adding: Thai Red Vegetable Curry (vendor@foo.com)
-I20191203-20:28:55.234(-10)?   Adding: Lamb/Beef/Chicken Wrap (vendor@foo.com)
-I20191203-20:28:55.254(-10)?   Adding: Lamb/Beef/Chicken Plate (vendor@foo.com)
-I20191203-20:28:55.260(-10)?   Adding: Lamb/Beef/Chicken Salad (vendor@foo.com)
-I20191203-20:28:55.281(-10)?   Adding: Garlic Yogurt Sauce (vendor@foo.com)
-I20191203-20:28:55.286(-10)?   Adding: Coffee (Hot/Cold/Blended) (vendor@foo.com)
-I20191203-20:28:55.290(-10)?   Adding: Donuts (vendor@foo.com)
-I20191203-20:28:55.341(-10)?   Adding: Lunch Sandwiches (vendor@foo.com)
-I20191203-20:28:55.342(-10)?   Adding: Breakfast (vendor@foo.com)
-I20191203-20:28:55.344(-10)?   Adding: Khichdi (vendor@foo.com)
-I20191203-20:28:55.345(-10)?   Adding: Strawberry Halava (vendor@foo.com)
-I20191203-20:28:55.346(-10)?   Adding: Peanut Butter Halava (vendor@foo.com)
-I20191203-20:28:55.348(-10)?   Adding: Pineapple Coconut Halava (vendor@foo.com)
-I20191203-20:28:55.349(-10)?   Adding: Tuna Melt Panini (vendor@foo.com)
-I20191203-20:28:55.380(-10)?   Adding: Grilled Cheese Panini (vendor@foo.com)
-I20191203-20:28:55.384(-10)?   Adding: Chicken Chipotle Panini (vendor@foo.com)
-I20191203-20:28:55.406(-10)?   Adding: Turkey Avocado Panini (vendor@foo.com)
-I20191203-20:28:55.411(-10)?   Adding: Corn Tacos (vendor@foo.com)
-I20191203-20:28:55.432(-10)?   Adding: Burritos (vendor@foo.com)
-I20191203-20:28:55.464(-10)?   Adding: Quesadillas (vendor@foo.com)
-I20191203-20:28:55.468(-10)?   Adding: Tamales (vendor@foo.com)
-I20191203-20:28:55.488(-10)?   Adding: Shave Ice (vendor@foo.com)
-I20191203-20:28:55.493(-10)?   Adding: Sorbet Bowls (vendor@foo.com)
-I20191203-20:28:55.517(-10)?   Adding: Poke Nachos (vendor@foo.com)
-I20191203-20:28:55.517(-10)?   Adding: Acai Bowls (vendor@foo.com)
-I20191203-20:28:55.539(-10)?   Adding: Beefy Miso Ramen (vendor@foo.com)
-I20191203-20:28:55.544(-10)?   Adding: Beefy Spicy Ramen (vendor@foo.com)
-I20191203-20:28:55.565(-10)?   Adding: Beefy Wild Ramen (vendor@foo.com)
-I20191203-20:28:55.568(-10)?   Adding: Pork Gyoza (vendor@foo.com)
-I20191203-20:28:55.589(-10)?   Adding: Chicken Katsu (vendor@foo.com)
-I20191203-20:28:55.594(-10)?   Adding: Loco Moco (vendor@foo.com)
-I20191203-20:28:55.613(-10)?   Adding: BBQ Chicken (vendor@foo.com)
-I20191203-20:28:55.618(-10)?   Adding: Grilled Garlic Ahi (vendor@foo.com)
-I20191203-20:28:55.640(-10)?   Adding: Egg Masala (vendor@foo.com)
-I20191203-20:28:55.644(-10)?   Adding: Vegetable Masala (vendor@foo.com)
-I20191203-20:28:55.664(-10)?   Adding: Tofu Sambal (vendor@foo.com)
-I20191203-20:28:55.811(-10)?   Adding: Vegetable Sambal (vendor@foo.com)
-I20191203-20:28:55.816(-10)?   Adding: Cheese Louise (vendor@foo.com)
-I20191203-20:28:55.837(-10)?   Adding: Pesto- Pesto (vendor@foo.com)
-I20191203-20:28:55.842(-10)?   Adding: Nutella (vendor@foo.com)
-I20191203-20:28:55.864(-10)?   Adding: Shoyu Ahi Poke Bowl (vendor@foo.com)
-I20191203-20:28:55.868(-10)?   Adding: Shoyu Tako Poke Bowl (vendor@foo.com)
-I20191203-20:28:55.890(-10)?   Adding: Miso Ahi Poke Bowl (vendor@foo.com)
-I20191203-20:28:55.896(-10)?   Adding: Miso Tako Poke Bowl (vendor@foo.com)
-I20191203-20:28:55.917(-10)?   Adding: Orange Chicken (vendor@foo.com)
-I20191203-20:28:55.941(-10)?   Adding: Beef Broccoli (vendor@foo.com)
-I20191203-20:28:55.946(-10)?   Adding: Mushroom Chicken (vendor@foo.com)
-I20191203-20:28:55.967(-10)?   Adding: Honey Walnut Shrimp (vendor@foo.com)
-I20191203-20:28:55.991(-10)?   Adding: Black/Green Iced Tea (vendor@foo.com)
-I20191203-20:28:55.995(-10)?   Adding: Hot Cocoa (vendor@foo.com)
-I20191203-20:28:56.017(-10)?   Adding: Cold Cereal w/Fruit (vendor@foo.com)
-I20191203-20:28:56.052(-10)?   Adding: Ice Cream Sundae (vendor@foo.com)
-I20191203-20:28:56.057(-10)?   Adding: Fish Jun Plate (vendor@foo.com)
-I20191203-20:28:56.091(-10)?   Adding: Kalbi Bibimbap (vendor@foo.com)
-I20191203-20:28:56.116(-10)?   Adding: Steak Plate (vendor@foo.com)
-I20191203-20:28:56.141(-10)?   Adding: Homemade Kimchi (vendor@foo.com)
-I20191203-20:28:56.145(-10)?   Adding: Cappuccino (vendor@foo.com)
-I20191203-20:28:56.145(-10)?   Adding: Macchiato (vendor@foo.com)
-I20191203-20:28:56.176(-10)?   Adding: Latte (vendor@foo.com)
-I20191203-20:28:56.179(-10)?   Adding: Mocha (vendor@foo.com)
-I20191203-20:28:56.201(-10)?   Adding: Pho (vendor@foo.com)
-I20191203-20:28:56.226(-10)?   Adding: Pad Thai (vendor@foo.com)
-I20191203-20:28:56.230(-10)?   Adding: Banh Mi Sandwiches (vendor@foo.com)
-I20191203-20:28:56.251(-10)?   Adding: Spring Rolls (vendor@foo.com)
-I20191203-20:28:56.274(-10)?   Adding: Smoothies (vendor@foo.com)
-I20191203-20:28:56.278(-10)?   Adding: Oatmeal Bowl (vendor@foo.com)
-I20191203-20:28:56.278(-10)?   Adding: Apple Cinnamon Pretzel (vendor@foo.com)
-I20191203-20:28:56.304(-10)?   Adding: Banana Toast (vendor@foo.com)
-I20191203-20:28:56.324(-10)? Creating default reviews.
-I20191203-20:28:56.328(-10)?   Adding Review: Nachos (john@foo.com)
+W20191212-20:26:25.720(-10)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
+W20191212-20:26:26.124(-10)? (STDERR) While this implementation will work correctly, it is known to be
+W20191212-20:26:26.125(-10)? (STDERR) approximately three times slower than the native implementation.
+W20191212-20:26:26.138(-10)? (STDERR) In order to use the native implementation instead, run
+W20191212-20:26:26.143(-10)? (STDERR)
+W20191212-20:26:26.156(-10)? (STDERR)   meteor npm install --save bcrypt
+W20191212-20:26:26.160(-10)? (STDERR)
+W20191212-20:26:26.173(-10)? (STDERR) in the root directory of your application.
+I20191212-20:26:26.576(-10)? Creating the default user(s)
+I20191212-20:26:26.580(-10)?   Creating user admin@foo.com.
+I20191212-20:26:26.881(-10)?   Creating user john@foo.com.
+I20191212-20:26:27.167(-10)?   Creating user vendor@foo.com.
+I20191212-20:26:27.449(-10)?   Creating user daspot@foo.com.
+I20191212-20:26:27.714(-10)?   Creating user doner@foo.com.
+I20191212-20:26:27.972(-10)?   Creating user dunkin@foo.com.
+I20191212-20:26:28.229(-10)?   Creating user govinda@foo.com.
+I20191212-20:26:28.488(-10)?   Creating user holoholo@foo.com.
+I20191212-20:26:28.745(-10)?   Creating user hottacos@foo.com.
+I20191212-20:26:29.002(-10)?   Creating user justice@foo.com.
+I20191212-20:26:29.255(-10)?   Creating user kamitoku@foo.com.
+I20191212-20:26:29.485(-10)?   Creating user landl@foo.com.
+I20191212-20:26:29.703(-10)?   Creating user lasoon@foo.com.
+I20191212-20:26:29.914(-10)?   Creating user lecrepe@foo.com.
+I20191212-20:26:30.122(-10)?   Creating user ono@foo.com.
+I20191212-20:26:30.327(-10)?   Creating user panda@foo.com.
+I20191212-20:26:30.532(-10)?   Creating user rocket@foo.com.
+I20191212-20:26:30.738(-10)?   Creating user sistah@foo.com.
+I20191212-20:26:30.944(-10)?   Creating user bean@foo.com.
+I20191212-20:26:31.144(-10)?   Creating user baale@foo.com.
+I20191212-20:26:31.347(-10)?   Creating user jamba@foo.com.
+I20191212-20:26:31.564(-10)? Creating default data.
+I20191212-20:26:31.568(-10)?   Adding: Eggplant Parmesan (daspot@foo.com)
+I20191212-20:26:31.588(-10)?   Adding: Moussakka (daspot@foo.com)
+I20191212-20:26:31.610(-10)?   Adding: Thai Green Vegetable Curry (daspot@foo.com)
+I20191212-20:26:31.611(-10)?   Adding: Thai Red Vegetable Curry (daspot@foo.com)
+I20191212-20:26:31.612(-10)?   Adding: Lamb/Beef/Chicken Wrap (doner@foo.com)
+I20191212-20:26:31.613(-10)?   Adding: Lamb/Beef/Chicken Plate (doner@foo.com)
+I20191212-20:26:31.614(-10)?   Adding: Lamb/Beef/Chicken Salad (doner@foo.com)
+I20191212-20:26:31.615(-10)?   Adding: Garlic Yogurt Sauce (doner@foo.com)
+I20191212-20:26:31.616(-10)?   Adding: Coffee (Hot/Cold/Blended) (dunkin@foo.com)
+I20191212-20:26:31.618(-10)?   Adding: Donuts (dunkin@foo.com)
+I20191212-20:26:31.619(-10)?   Adding: Lunch Sandwiches (dunkin@foo.com)
+I20191212-20:26:31.625(-10)?   Adding: Breakfast (dunkin@foo.com)
+I20191212-20:26:31.625(-10)?   Adding: Khichdi (govinda@foo.com)
+I20191212-20:26:31.637(-10)?   Adding: Strawberry Halava (govinda@foo.com)
+I20191212-20:26:31.641(-10)?   Adding: Peanut Butter Halava (govinda@foo.com)
+I20191212-20:26:31.641(-10)?   Adding: Pineapple Coconut Halava (govinda@foo.com)
+I20191212-20:26:31.654(-10)?   Adding: Tuna Melt Panini (holoholo@foo.com)
+I20191212-20:26:31.658(-10)?   Adding: Grilled Cheese Panini (holoholo@foo.com)
+I20191212-20:26:31.671(-10)?   Adding: Chicken Chipotle Panini (holoholo@foo.com)
+I20191212-20:26:31.675(-10)?   Adding: Turkey Avocado Panini (holoholo@foo.com)
+I20191212-20:26:31.687(-10)?   Adding: Corn Tacos (hottacos@foo.com)
+I20191212-20:26:31.692(-10)?   Adding: Burritos (hottacos@foo.com)
+I20191212-20:26:31.704(-10)?   Adding: Quesadillas (hottacos@foo.com)
+I20191212-20:26:31.709(-10)?   Adding: Tamales (hottacos@foo.com)
+I20191212-20:26:31.721(-10)?   Adding: Shave Ice (justice@foo.com)
+I20191212-20:26:31.726(-10)?   Adding: Sorbet Bowls (justice@foo.com)
+I20191212-20:26:31.738(-10)?   Adding: Poke Nachos (justice@foo.com)
+I20191212-20:26:31.741(-10)?   Adding: Acai Bowls (justice@foo.com)
+I20191212-20:26:31.754(-10)?   Adding: Beefy Miso Ramen (kamitoku@foo.com)
+I20191212-20:26:31.758(-10)?   Adding: Beefy Spicy Ramen (kamitoku@foo.com)
+I20191212-20:26:31.771(-10)?   Adding: Beefy Wild Ramen (kamitoku@foo.com)
+I20191212-20:26:31.774(-10)?   Adding: Pork Gyoza (kamitoku@foo.com)
+I20191212-20:26:31.787(-10)?   Adding: Chicken Katsu (landl@foo.com)
+I20191212-20:26:31.792(-10)?   Adding: Loco Moco (landl@foo.com)
+I20191212-20:26:31.805(-10)?   Adding: BBQ Chicken (landl@foo.com)
+I20191212-20:26:31.808(-10)?   Adding: Grilled Garlic Ahi (landl@foo.com)
+I20191212-20:26:31.821(-10)?   Adding: Egg Masala (lasoon@foo.com)
+I20191212-20:26:31.825(-10)?   Adding: Vegetable Masala (lasoon@foo.com)
+I20191212-20:26:31.838(-10)?   Adding: Tofu Sambal (lasoon@foo.com)
+I20191212-20:26:31.842(-10)?   Adding: Vegetable Sambal (lasoon@foo.com)
+I20191212-20:26:31.855(-10)?   Adding: Cheese Louise (lecrepe@foo.com)
+I20191212-20:26:31.859(-10)?   Adding: Crepe Monsieur (lecrepe@foo.com)
+I20191212-20:26:31.859(-10)?   Adding: Pesto- Pesto (lecrepe@foo.com)
+I20191212-20:26:31.876(-10)?   Adding: Nutella (lecrepe@foo.com)
+I20191212-20:26:31.877(-10)?   Adding: Shoyu Ahi Poke Bowl (ono@foo.com)
+I20191212-20:26:31.891(-10)?   Adding: Shoyu Tako Poke Bowl (ono@foo.com)
+I20191212-20:26:31.895(-10)?   Adding: Miso Ahi Poke Bowl (ono@foo.com)
+I20191212-20:26:31.908(-10)?   Adding: Miso Tako Poke Bowl (ono@foo.com)
+I20191212-20:26:31.912(-10)?   Adding: Orange Chicken (panda@foo.com)
+I20191212-20:26:31.925(-10)?   Adding: Beef Broccoli (panda@foo.com)
+I20191212-20:26:31.929(-10)?   Adding: Mushroom Chicken (panda@foo.com)
+I20191212-20:26:31.941(-10)?   Adding: Honey Walnut Shrimp (panda@foo.com)
+I20191212-20:26:31.945(-10)?   Adding: Black/Green Iced Tea (rocket@foo.com)
+I20191212-20:26:31.955(-10)?   Adding: Hot Cocoa (rocket@foo.com)
+I20191212-20:26:31.959(-10)?   Adding: Cold Cereal w/Fruit (rocket@foo.com)
+I20191212-20:26:31.971(-10)?   Adding: Ice Cream Sundae (rocket@foo.com)
+I20191212-20:26:31.975(-10)?   Adding: Fish Jun Plate (sistah@foo.com)
+I20191212-20:26:31.987(-10)?   Adding: Kalbi Bibimbap (sistah@foo.com)
+I20191212-20:26:31.991(-10)?   Adding: Steak Plate (sistah@foo.com)
+I20191212-20:26:32.002(-10)?   Adding: Homemade Kimchi (sistah@foo.com)
+I20191212-20:26:32.006(-10)?   Adding: Cappuccino (bean@foo.com)
+I20191212-20:26:32.017(-10)?   Adding: Macchiato (bean@foo.com)
+I20191212-20:26:32.021(-10)?   Adding: Latte (bean@foo.com)
+I20191212-20:26:32.033(-10)?   Adding: Mocha (bean@foo.com)
+I20191212-20:26:32.037(-10)?   Adding: Pho (baale@foo.com)
+I20191212-20:26:32.049(-10)?   Adding: Pad Thai (baale@foo.com)
+I20191212-20:26:32.060(-10)?   Adding: Banh Mi Sandwiches (baale@foo.com)
+I20191212-20:26:32.072(-10)?   Adding: Spring Rolls (baale@foo.com)
+I20191212-20:26:32.082(-10)?   Adding: Smoothies (jamba@foo.com)
+I20191212-20:26:32.093(-10)?   Adding: Oatmeal Bowl (jamba@foo.com)
+I20191212-20:26:32.098(-10)?   Adding: Apple Cinnamon Pretzel (jamba@foo.com)
+I20191212-20:26:32.115(-10)?   Adding: Banana Toast (jamba@foo.com)
+I20191212-20:26:32.127(-10)?  Adding: name: Vendor for vendor@foo.com
+I20191212-20:26:32.129(-10)?  Adding: name: Da Spot for daspot@foo.com
+I20191212-20:26:32.142(-10)?  Adding: name: Doner Shack for doner@foo.com
+I20191212-20:26:32.146(-10)?  Adding: name: Dunkin' Donuts for dunkin@foo.com
+I20191212-20:26:32.158(-10)?  Adding: name: Govinda's for govinda@foo.com
+I20191212-20:26:32.161(-10)?  Adding: name: Holoholo Grill for holoholo@foo.com
+I20191212-20:26:32.174(-10)?  Adding: name: Hot Tacos for hottacos@foo.com
+I20191212-20:26:32.178(-10)?  Adding: name: Just Ice for justice@foo.com
+I20191212-20:26:32.190(-10)?  Adding: name: Kamitoku Ramen for kamitoku@foo.com
+I20191212-20:26:32.194(-10)?  Adding: name: L&L Hawaiian Barbecue for landl@foo.com
+I20191212-20:26:32.206(-10)?  Adding: name: Lasoon for lasoon@foo.com
+I20191212-20:26:32.210(-10)?  Adding: name: Le Crêpe Café for lecrepe@foo.com
+I20191212-20:26:32.222(-10)?  Adding: name: Ono Seafood for ono@foo.com
+I20191212-20:26:32.232(-10)?  Adding: name: Panda Express for panda@foo.com
+I20191212-20:26:32.233(-10)?  Adding: name: Rocket Coffee for rocket@foo.com
+I20191212-20:26:32.243(-10)?  Adding: name: Sistah Truck for sistah@foo.com
+I20191212-20:26:32.244(-10)?  Adding: name: The Bean Counter for bean@foo.com
+I20191212-20:26:32.256(-10)?  Adding: name: Ba-Le for baale@foo.com
+I20191212-20:26:32.259(-10)?  Adding: name: Jamba Juice for jamba@foo.com
+I20191212-20:26:32.271(-10)?  Adding: Vendor listing: Da Spot for daspot@foo.com
+I20191212-20:26:32.274(-10)?  Adding: Vendor listing: Doner Shack for doner@foo.com
+I20191212-20:26:32.287(-10)?  Adding: Vendor listing: Dunkin' Donuts for dunkin@foo.com
+I20191212-20:26:32.290(-10)?  Adding: Vendor listing: Govinda's for govinda@foo.com
+I20191212-20:26:32.304(-10)?  Adding: Vendor listing: Holoholo Grill for holoholo@foo.com
+I20191212-20:26:32.308(-10)?  Adding: Vendor listing: Hot Tacos for hottacos@foo.com
+I20191212-20:26:32.321(-10)?  Adding: Vendor listing: Just Ice for justice@foo.com
+I20191212-20:26:32.325(-10)?  Adding: Vendor listing: Kamitoku Ramen for kamitoku@foo.com
+I20191212-20:26:32.338(-10)?  Adding: Vendor listing: L&L Hawaiian Barbecue for landl@foo.com
+I20191212-20:26:32.343(-10)?  Adding: Vendor listing: Lasoon for lasoon@foo.com
+I20191212-20:26:32.357(-10)?  Adding: Vendor listing: Le Crêpe Café for lecrepe@foo.com
+I20191212-20:26:32.361(-10)?  Adding: Vendor listing: Ono Seafood for ono@foo.com
+I20191212-20:26:32.374(-10)?  Adding: Vendor listing: Panda Express for panda@foo.com
+I20191212-20:26:32.379(-10)?  Adding: Vendor listing: Rocket Coffee for rocket@foo.com
+I20191212-20:26:32.393(-10)?  Adding: Vendor listing: Sistah Truck for sistah@foo.com
+I20191212-20:26:32.411(-10)?  Adding: Vendor listing: The Bean Counter for bean@foo.com
+I20191212-20:26:32.428(-10)?  Adding: Vendor listing: Ba-Le for baale@foo.com
+I20191212-20:26:32.444(-10)?  Adding: Vendor listing: Jamba Juice for jamba@foo.com
 => Started your app.
 
 => App running at: http://localhost:3000/
@@ -314,4 +413,4 @@ For Milestone 3, we intend to improve upon the functionality we provided in Mile
 
 
 ### Contact Us
-The developers of this website are: Michael Johnson, Brandon Won, and Kelli Tamashiro. If you have any questions about our system, please feel free to contact us at kellikt@hawaii.edu.
+The developers of this website are: <a href="https://michaeljohnson127.github.io/">Michael Johnson</a>, <a href="https://wonbk.github.io/">Brandon Won</a>, and <a href="https://kellikt.github.io/">Kelli Tamashiro</a>. If you have any questions about our system, please feel free to contact us at kellikt@hawaii.edu.
