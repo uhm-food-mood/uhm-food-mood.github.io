@@ -157,6 +157,15 @@ See the Manage Listings Page <a href = "http://uhmfoodmood.meteorapp.com/#/admin
 
 Note that to get to this page as an admin, you will need to click on Manage > Manage Listings in the menu.
 
+#### Admin - Manage Reviews Page
+![reviews](images/AdminReviews.PNG)
+
+Admins also have the ability to view all reviews and remove/edit reviews. They can also search through all reviews using the search bar at the top left corner.
+
+See the Manage Reviews Page <a href = "http://uhmfoodmood.meteorapp.com/#/adminReviews>here</a>.
+
+Note that to get to this page as an admin, you will need to click on Manage > Manage Reviews in the menu.
+
 #### Admin - Manage Favorites Page
 
 ![favorites](images/AdminFavorites.PNG)
