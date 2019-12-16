@@ -122,16 +122,16 @@ Once confirmed, they will receive an alert letting them know their review has be
 
 See Your Reviews page <a href="http://uhmfoodmood.meteorapp.com/#/reviews">here</a>.
 
-#### Vendor Listing Page:
+#### Vendors - Your Listings Page:
 ![vendor](images/VendorListings.PNG)
 
-As a vendor, you can add new listings and edit or delete your existing listings. Your listings will all be shown in the Vendor Listings page. To add a new listing, you will need to click on the "Add Menu Item" button at the top right of the page. To edit an existing listing, click on the Edit link in the row containing the listing. To delete a listing, click the trash can button in the row containing the listing. You also have the same search functionality for your own listings, using the search bar at the top left corner.
+As a vendor, you can add new listings and edit or delete your existing listings. Your listings will all be shown in Your Listings page. To add a new listing, you will need to click on the "Add Menu Item" button at the top right of the page. To edit an existing listing, click on the Edit link in the row containing the listing. To delete a listing, click the trash can button in the row containing the listing. You also have the same search functionality for your own listings, using the search bar at the top left corner.
 
-See the Vendor Listings page <a href = "http://uhmfoodmood.meteorapp.com/#/vendor">here</a>
+See Your Listings page <a href = "http://uhmfoodmood.meteorapp.com/#/vendor">here</a>
 
 #### Vendor/Admin Add Listing Page:
 
-![add listing](images/AddVendorListing.PNG)
+![add listing](images/AddVendor.PNG)
 
 As an admin/vendor, you can utilize the Add Listing Page to add new food listings. You will need to enter the name of the food, the URL to the image of the food, the name of the vendor, the price, whether the food is vegan, the style of the food, the date when the food will be available from, and the times when students can purchase the food. Click the submit button and it will create a new listing with the provided information. 
 ![added](images/AddVendorListingSuccess.PNG)
@@ -169,7 +169,7 @@ See the Manage Favorites Page <a href = "http://uhmfoodmood.meteorapp.com/#/list
 
 ![users](images/AdminUsers.PNG)
 
-Additionally, Admins can also view and manage all users in the Manage Users page. Admins can search through users using the search bar at the top left corner (search by name). Admins can also add users as admins or vendors by clicking on the red "Add as Admin" button or the red "Add as Vendor" button. They can also remove users by clicking on the red trash can icon in the Remove column.
+Additionally, Admins can also view and manage all users in the Manage Users page. Admins can search through users using the search bar at the top left corner (search by name). Admins can also add users as admins or vendors by clicking on the green "Add as Admin" button or the green "Add as Vendor" button. They can also remove users as admins or vendors by clicking on the red "Remove as Admin" button or the red "Remove as Vendor" button. They can also remove users by clicking on the red trash can icon in the Remove column.
 
 See the Manage Users Page <a href = "http://uhmfoodmood.meteorapp.com/#/users">here</a>.
 
@@ -236,10 +236,6 @@ Next, download <a href="https://github.com/uhm-food-mood/uhm-food-mood">UHM Food
 Then, cd into the app/ directory of your local copy of the repo and install third party libraries with:
 ```
 meteor npm install
-```
-You will also need to install Moment using:
-```
-npm install moment
 ```
 Once you've installed the libraries, run the application with the following command:
 ```
@@ -402,7 +398,7 @@ I20191212-20:26:32.444(-10)?  Adding: Vendor listing: Jamba Juice for jamba@foo.
    Type Control-C twice to stop.
 ```
 #### Viewing UHM Food Mood
-If the app was installed correctly, you will be able to view it at http://localhost:3000/. You can login using the credentials in <a href="https://github.com/uhm-food-mood/uhm-food-mood/blob/master/config/settings.development.json">settings.development.json</a>.
+If the app was installed correctly, you will be able to view it at http://localhost:3000/. You can login using the credentials in <a href="https://github.com/uhm-food-mood/uhm-food-mood/blob/master/app/private/defaultAccounts.json">defaultAccounts.json</a>.
 ### Development History
 #### Milestone 1
 In Milestone 1, we created the Landing page and four mockup pages - the User Favorites page, the Vendor Listings page, the Vendor/Admin Add Listing page, and the Admin Listings page. We added a small amount of functionality to the Admin Listings page, as admins are able to remove listings from the Admin Listings page. We also set up the schema for and MongoDB collection of food options (MenuItems Collection), so all of the information on the cards that appear on our app is pulled from our database.
