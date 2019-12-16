@@ -109,7 +109,7 @@ Once confirmed, they will receive an alert that the removal was successful.
 
 See the Favorites page (must be logged in) <a href = "http://uhmfoodmood.meteorapp.com/#/list">here</a>
 
-####Your Reviews Page
+#### Your Reviews Page
 
 ![yourreviews](images/YourReviews.PNG)
 
