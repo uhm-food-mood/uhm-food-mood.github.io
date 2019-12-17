@@ -21,7 +21,9 @@ Ultimately, we hope that the app will provide the following:
 
 ### Overview
 
-UHM Food Mood aims to provide a consolidated catalog of food options at UH Manoa. Although there are existing catalogs of food options on campus, such as <a href = "http://manoa.hawaii.edu/food/">UHM Food Vendors</a> and <a href = "https://uhm.sodexomyway.com/">Manoa Dining Services</a>, there are no catalogs that contain every food option on campus. We aim to make UHM Food Mood the website you look to for food options whenever you're hungry on campus. Eventually, we would like to give users the ability to rate food options so other students will know what's popular on campus.
+UHM Food Mood aims to provide a consolidated catalog of food options at UH Manoa. Although there are existing catalogs of food options on campus, such as <a href = "http://manoa.hawaii.edu/food/">UHM Food Vendors</a> and <a href = "https://uhm.sodexomyway.com/">Manoa Dining Services</a>, there are no catalogs that contain every food option on campus. We aim to make UHM Food Mood the website you look to for food options whenever you're hungry on campus.
+
+The "special sauce" of this website is that users can rate and review food options. In turn, these ratings will be used for the "sort by rating" option and appear on the Students' Top Choices section in the Landing page.
 
 ### User Guide
 
@@ -217,22 +219,17 @@ Admin testing
 
 From here, we observed how our testers interacted with our website while attempting to carry out these tasks. 
 
-#### Raymond
- ![raymond](images/raymond.jpg)
+#### Anonymous Participant 1
 
-Raymond is a student at UH Manoa who helped test out our website. When testing our website with Raymond, we found that it was hard to tell when the "Food available now" button was active. As such, occasionally he would search without knowing it was only showing the food currently available. We addressed this issue by making the "Food available now" button green when it is active.
+Anonymous Participant 1 is a student at UH Manoa who helped test out our website. When testing our website with Anonymous Participant 1, we found that it was hard to tell when the "Food available now" button was active. As such, occasionally he would search without knowing it was only showing the food currently available. We addressed this issue by making the "Food available now" button green when it is active.
 
-#### Desmond
-![desmond](images/desmond.jpg)
+#### Anonymous Participant 2
 
-Desmond is another student at UH Manoa who helped test out our website. Desmond offered some advice on improving the User Interface, such as increasing padding on certain areas (Login page, create space above the header) as well as hiding buttons that certain users could not use (ex. hiding the Add Review button for users not logged in). From Desmond's suggestions, we made numerous UI updates.
+Anonymous Participant 2 is another student at UH Manoa who helped test out our website. Anonymous Participant 2 offered some advice on improving the User Interface, such as increasing padding on certain areas (Login page, create space above the header) as well as hiding buttons that certain users could not use (ex. hiding the Add Review button for users not logged in). From Anonymous Participant 2's suggestions, we made numerous UI updates.
 
-#### Jackie, Monica, Jacob
-![jackie](images/jackie.jpg)
-![monica](images/monica.jpg)
-![jacob](images/jacob.jpg)
+#### Anonymous Participant 3, Anonymous Participant 4, Anonymous Participant 5
 
-We combined the summary of our findings for Jackie, Monica, and Jacob, as we found that the issues they ran into were pretty similar. All three of them did not know what they could search in the searchbar (vegan, name of food, style of food, vendor) to find food options. In addition, they wanted to see some kind of connection between the ratings in the reviews of the food option and the food option listed on the Food Options page. From this feedback, we decided to create instructions for the search bars and had the average of the ratings in the reviews of the food option displayed on the food option.
+We combined the summary of our findings for Anonymous Participant 3, Anonymous Participant 4, and Anonymous Participant 5, as we found that the issues they ran into were pretty similar. All three of them did not know what they could search in the searchbar (vegan, name of food, style of food, vendor) to find food options. In addition, they wanted to see some kind of connection between the ratings in the reviews of the food option and the food option listed on the Food Options page. From this feedback, we decided to create instructions for the search bars and had the average of the ratings in the reviews of the food option displayed on the food option.
 
 
 ### Developer Guide
